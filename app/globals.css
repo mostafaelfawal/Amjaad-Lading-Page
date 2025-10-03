@@ -9,7 +9,7 @@
   --color-lightly: #c4c4c4;
   --color-darkly: #242527;
   /* Linear */
-  --color-from: #404040;
+  --color-from: #474646;
   --color-to: #222222;
 }
 
@@ -17,13 +17,23 @@ button {
   cursor: pointer;
 }
 
-._ {
-  color: #013b5d;
-  color: #2488c2;
-  color: #5ebbee;
-  color: #bddbeb;
-  color: #c4c4c4;
-  color: #242527;
-  color: #3b3b3b;
-  color: #222222;
+/* Chrome, Edge, Safari, Opera */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--color-primary), var(--color-primary-light));
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin; /* auto | thin | none */
+  scrollbar-color: var(--color-primary) transparent;
 }

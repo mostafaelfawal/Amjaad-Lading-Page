@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function New({ img, title, desc }: PropsComponent) {
   return (
     <motion.article
-      className="flex flex-col gap-6 w-60"
+      className="flex flex-col gap-6 w-full max-w-[300px]"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7 }}
@@ -15,20 +15,20 @@ export default function New({ img, title, desc }: PropsComponent) {
       <Image
         src={img!}
         alt="img"
-        width={250}
-        height={250}
-        className="min-w-fit shadow"
+        width={300}
+        height={200}
+        className="w-full h-auto object-cover shadow"
       />
-      <div className="flex gap-3">
-        <div>
-          <p className="font-semibold text-xl text-center">12</p>
-          <span className="font-semibold ">Jun</span>
+      <div className="flex gap-3 items-center">
+        <div className="text-center">
+          <p className="font-semibold text-lg md:text-xl">12</p>
+          <span className="font-semibold">Jun</span>
         </div>
-        <span className="border-l border-l-lightly"></span>
-        <p className="text-darkly font-semibold flex items-center">{title}</p>
+        <span className="border-l border-l-lightly h-8"></span>
+        <p className="text-darkly font-semibold">{title}</p>
       </div>
-      <div className="flex">
-        <p className="text-lightly text-sm">
+      <div>
+        <p className="text-lightly text-sm md:text-base leading-relaxed">
           {desc}{" "}
           <button className="text-primary hover:text-primary-dark">
             عرض المزيد

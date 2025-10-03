@@ -5,6 +5,7 @@ import Service from "./Service";
 export default function Services() {
   return (
     <motion.section
+      id="services"
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.3 }}
@@ -14,21 +15,21 @@ export default function Services() {
           transition: { staggerChildren: 0.25 },
         },
       }}
-      className="bg-[#f8f8f8] px-20 py-12"
+      className="bg-[#f8f8f8] px-6 md:px-20 py-12"
     >
       {/* العناوين */}
       <motion.div
-        className="flex gap-5 mb-12"
+        className="flex flex-col md:flex-row gap-6 md:gap-12 mb-12"
         variants={{
           hidden: { opacity: 0, y: 40 },
           show: { opacity: 1, y: 0 },
         }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <p className="font-bold text-darkly text-6xl md:leading-relaxed leading-snug">
+        <p className="font-bold text-darkly text-3xl md:text-6xl leading-snug md:leading-relaxed">
           خدماتنا الأحترافيه
         </p>
-        <p className="text-lightly text-xl items-center flex">
+        <p className="text-lightly text-base md:text-xl flex items-center">
           اطلع على أفضل خدماتنا التي يمكنك طلبها لبناء شركتك، ولا تنسَ الاستفسار
           عبر بريدنا الإلكتروني أو خدمة العملاء إذا كنت مهتمًا باستخدام خدماتنا.
         </p>
@@ -36,7 +37,7 @@ export default function Services() {
 
       {/* البوكسات */}
       <motion.div
-        className="flex gap-20 justify-center"
+        className="flex flex-col md:flex-row gap-10 md:gap-20 justify-center items-center md:items-stretch"
         variants={{
           hidden: {},
           show: { transition: { staggerChildren: 0.25 } },

@@ -1,6 +1,7 @@
 import About from "./Components/About";
 import Articles from "./Components/Articles/Articles";
 import Features from "./Components/Features/Features";
+import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Companies from "./Components/Hero/Companies";
 import Hero from "./Components/Hero/Hero";
@@ -22,6 +23,7 @@ export default function Home() {
         <Articles />
         <Projects />
       </main>
+      <Footer />
     </>
   );
 }

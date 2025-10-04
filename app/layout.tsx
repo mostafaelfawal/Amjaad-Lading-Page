@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "أمجاد للعقارات | أفضل شركة تطوير عقاري في الخليج",
+  title: "أمجاد للعقارات | Mostafa Hamdi",
   description:
     "شركة أمجاد للعقارات تأسست عام 1992 وتعد من الشركات الرائدة في مجال المقاولات والتطوير العقاري في الخليج. اكتشف مشاريعنا وخدماتنا المميزة.",
   keywords: [
